@@ -1,1 +1,67 @@
 /* Write your code here. */
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.image {
+  width: 500px;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+  order: 1;
+}
+@media Screen and (min-width: 768px) {
+  .content-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    order: 0;
+    margin-left: 0px;
+  }
+}
+.title {
+  max-width: 50%;
+  font-size: 50px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #ffffff;
+}
+.label {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.input-bar {
+  width: 70%;
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 5px;
+}
+.count {
+  width: 280px;
+  background-color: #ffffff;
+  color: #1d976c;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.image-container {
+  order: 0;
+}
